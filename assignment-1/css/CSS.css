@@ -35,8 +35,18 @@ h1{
     width: 74px;
     background-color: green;
     text-align: center;
-    position: relative;
-    top: 2px;
-    left: 80%;
+    float: right;
     margin-bottom: 5px;
+}
+.chicken .item{
+    background-color: #FFC0CB;
+}
+.beef .item{
+    background-color: #B22222;
+}
+.sushi .item{
+    background-color: #FAEBD7;
+}
+p{
+    clear:right;
 }
