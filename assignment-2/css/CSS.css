@@ -1,30 +1,10 @@
 *{
     box-sizing: border-box;
-}
-
-/* Desktop Size */
-
-
-
-
-/* Tab size */
-
-
-
-
-/* Phone size */
-
-
-
-
-
-
-*{
-    box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 h1{
     text-align: center;
+    margin-top: 0px;
 }
 .chicken, .sushi, .beef{
     float: left;
@@ -36,11 +16,41 @@ h1{
     background-color: #808080;
     position: relative;
 }
+
+#header-nav{
+    background-color: #808080;
+    border-radius: 0%;
+    border: 0px;
+    margin: 0em;
+}
+body{
+    margin: 0em;
+}
+.navbar-header p{
+    margin-top: 0px;
+    font-size: 220%;
+    padding: 1%;
+}
+.chicken, .beef, .sushi{
+    align-content: center;
+}
+.item{
+    width: 74px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-left: 40%;
+    font-size: 130%;
+}
+p{
+    clear:right;
+}
+/* Desktop Size */
 @media (min-width: 992px){
     .chicken, .beef, .sushi{
         width: 33.33%;
     }
 }
+/* Tab size */
 @media (min-width: 768px) and (max-width: 991px){
     .chicken, .beef{
         width:50%;
@@ -49,26 +59,9 @@ h1{
         width:100%
     }
 }
+/* Phone size */
 @media (max-width: 767px){
     .chicken, .beef, .sushi{
         width: 100%;
     }
-}
-.item{
-    width: 74px;
-    text-align: center;
-    float: right;
-    margin-bottom: 5px;
-}
-.chicken .item{
-    background-color: #FFC0CB;
-}
-.beef .item{
-    background-color: #B22222;
-}
-.sushi .item{
-    background-color: #FAEBD7;
-}
-p{
-    clear:right;
 }
