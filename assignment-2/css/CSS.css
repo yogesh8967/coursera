@@ -16,13 +16,6 @@ h1{
     background-color: #808080;
     position: relative;
 }
-
-#header-nav{
-    background-color: #808080;
-    border-radius: 0%;
-    border: 0px;
-    margin: 0em;
-}
 body{
     margin: 0em;
 }
@@ -44,20 +37,26 @@ body{
 p{
     clear:right;
 }
-
-
-.navbar-toggler-icon{
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+.bg-light{
+    background-color: #808080 !important;
 }
-
 /* Desktop Size */
 @media (min-width: 992px){
+    .nav-item{
+        display: none;
+    }
     .chicken, .beef, .sushi{
         width: 33.33%;
     }
 }
 /* Tab size */
 @media (min-width: 768px) and (max-width: 991px){
+    .nav-item{
+        display: none;
+    }
+    .navbar-toggler-icon{
+        display: none;
+    }
     .chicken, .beef{
         width:50%;
     }
@@ -67,6 +66,9 @@ p{
 }
 /* Phone size */
 @media (max-width: 767px){
+    .bg-light{
+        background-color: gray;
+    }
     .chicken, .beef, .sushi{
         width: 100%;
     }
